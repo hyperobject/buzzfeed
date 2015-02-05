@@ -1,0 +1,42 @@
+#! /usr/bin/python
+
+import random
+import string
+
+
+def word():
+    return random.choice(['dogs', 'old people', 'shoes','tumblr users', 'smart people', 'disney movies', 'celebrities', 'little kids', 'disney princesses', 'villains', 'classic movies'])
+
+def believe():
+	return 
+
+def punc():
+	return random.choice(['.', '!', ''])
+
+def reasons():
+    s = str(num) + ' reasons why'
+    s += ' ' + word() + ' '
+    s += 'are ' + random.choice(['annoying', 'horrible', 'awesome', 'insane', 'superlative', 'funny', 'wrong', 'right', 'the worst', 'the best'])
+    s += punc()
+    return s
+
+def humanity():
+    return 'These ' + str(num) + ' ' + word() + ' will restore your faith in humanity' + punc()
+
+def tears():
+	return 'These ' + str(num) + ' ' + word() + ' will ' + random.choice(['make you cry', 'bring you to tears']) + punc() 
+
+def quiz():
+	return "QUIZ! Which one of these " + str(num) + " " + word() + " describes " + random.choice(['you', 'your friends', 'your social life', 'your family', 'your parents', 'your music taste']) + '?'
+
+
+d = {1:reasons, 2:humanity, 3:tears, 4:quiz}
+
+num = random.randint(2,60)
+pick = random.randint(1,len(d.keys()))
+final = ''
+final =  d[pick]()
+final = string.capwords(final)
+if pick != 4 and pick != 3:
+	final += random.choice([' (You Won\'t Believe Number ' + str(random.randint(1, num-1)) + '!)'])
+print final
