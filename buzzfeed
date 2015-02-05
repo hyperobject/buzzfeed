@@ -5,7 +5,7 @@ import string
 
 
 def word():
-    return random.choice(['dogs', 'old people', 'shoes','tumblr users', 'smart people', 'disney movies', 'celebrities', 'little kids', 'disney princesses', 'villains', 'classic movies'])
+    return random.choice(['dogs', 'old people', 'shoes','tumblr users', 'smart people', 'disney movies', 'celebrities', 'little kids', 'disney princesses', 'villains', 'classic movies', 'tv shows'])
 
 def believe():
 	return 
