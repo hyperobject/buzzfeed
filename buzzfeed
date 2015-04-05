@@ -5,7 +5,7 @@ import string
 
 
 def word():
-    return random.choice(['dogs', 'old people', 'shoes','tumblr users', 'smart people', 'disney movies', 'celebrities', 'little kids', 'disney princesses', 'villains', 'classic movies', 'tv shows',  random.choice(['dogs', 'people', random.choice(['my ', '']) + 'shoes', random.choice(['other ', '']) +'tumblr users', 'smart people', 'disney movies', 'super bowl snacks', 'gifts', 'demonstrators', 'books', 'valentines', 'touchdowns', 'puppies', 'actors', 'actresses', 'cars', 'horoscopes',  s += ' ' + random.choice(['dogs', 'people', random.choice(['my ', '']) + 'shoes', random.choice(['other ', '']) +'tumblr users', 'smart people', 'disney movies', 'super bowl snacks', 'gifts', 'demonstrators', 'books', 'valentines', 'touchdowns', 'puppies', 'actors', 'actresses', 'cars', 'horoscopes'])
+    return random.choice(['dogs', 'old people', 'shoes','tumblr users', 'smart people', 'disney movies', 'celebrities', 'little kids', 'disney princesses', 'villains', 'classic movies', 'tv shows',  random.choice(['dogs', 'people', random.choice(['my ', '']) + 'shoes', random.choice(['other ', '']) +'tumblr users', 'smart people', 'disney movies', 'super bowl snacks', 'gifts', 'demonstrators', 'books', 'valentines', 'touchdowns', 'puppies', 'actors', 'actresses', 'cars', 'horoscopes',  random.choice(['dogs', 'people', random.choice(['my ', '']) + 'shoes', random.choice(['other ', '']) +'tumblr users', 'smart people', 'disney movies', 'super bowl snacks', 'gifts', 'demonstrators', 'books', 'valentines', 'touchdowns', 'puppies', 'actors', 'actresses', 'cars', 'horoscopes'])
 
 def believe():
     return 
