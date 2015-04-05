@@ -5,13 +5,13 @@ import string
 
 
 def word():
-    return random.choice(['dogs', 'old people', 'shoes','tumblr users', 'smart people', 'disney movies', 'celebrities', 'little kids', 'disney princesses', 'villains', 'classic movies', 'tv shows'])
+    return random.choice(['dogs', 'people', random.choice(['my ', '']) + 'shoes', random.choice(['other ', '']) +'tumblr users', 'smart people', 'disney movies', 'super bowl snacks', 'gifts', 'demonstrators', 'books', 'valentines', 'touchdowns', 'puppies', 'actors', 'actresses', 'cars', 'horoscopes', 'celebrities', 'little kids', 'disney princesses', 'villains', 'classic movies', 'tv shows'])
 
 def believe():
-	return 
+    return 
 
 def punc():
-	return random.choice(['.', '!', ''])
+    return random.choice(['.', '!', ''])
 
 def reasons():
     s = str(num) + ' reasons why'
@@ -24,13 +24,15 @@ def humanity():
     return 'These ' + str(num) + ' ' + word() + ' will restore your faith in humanity' + punc()
 
 def tears():
-	return 'These ' + str(num) + ' ' + word() + ' will ' + random.choice(['make you cry', 'bring you to tears']) + punc() 
+    return 'These ' + str(num) + ' ' + word() + ' will ' + random.choice(['make you cry', 'bring you to tears']) + punc() 
 
 def quiz():
-	return "QUIZ! Which one of these " + str(num) + " " + word() + " describes " + random.choice(['you', 'your friends', 'your social life', 'your family', 'your parents', 'your music taste']) + '?'
+    return "QUIZ! Which one of these " + str(num) + " " + word() + " describes " + random.choice(['you', 'your friends', 'your social life', 'your family', 'your parents', 'your music taste']) + '?'
 
+def mostAbout():
+    return 'The ' +str(num) +random.choice([random.choice([' best',' worst']), random.choice([' most annoying', ' most horrible', ' most awesome', ' most insane', ' funniest', ' wrongest', ' rightest'])]) + ' things about ' +word()
 
-d = {1:reasons, 2:humanity, 3:tears, 4:quiz}
+d = {1:reasons, 2:humanity, 3:tears, 4:quiz, 5:mostAbout}
 
 num = random.randint(2,60)
 pick = random.randint(1,len(d.keys()))
@@ -38,5 +40,5 @@ final = ''
 final =  d[pick]()
 final = string.capwords(final)
 if pick != 4 and pick != 3:
-	final += random.choice([' (You Won\'t Believe Number ' + str(random.randint(1, num-1)) + '!)'])
+    final += random.choice([' (You Won\'t Believe Number ' + str(random.randint(1, num-1)) + '!)'])
 print final
