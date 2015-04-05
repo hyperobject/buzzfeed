@@ -5,7 +5,7 @@ import string
 
 
 def word():
-    return random.choice(['dogs', 'people', random.choice(['my ', '']) + 'shoes', random.choice(['other ', '']) +'tumblr users', 'smart people', 'disney movies', 'super bowl snacks', 'gifts', 'demonstrators', 'books', 'valentines', 'touchdowns', 'puppies', 'actors', 'actresses', 'cars', 'horoscopes', 'celebrities', 'little kids', 'disney princesses', 'villains', 'classic movies', 'tv shows'])
+    return random.choice(['dogs', 'people', 'shoes', random.choice(['other ', '']) +'tumblr users', 'smart people', 'disney movies', 'super bowl snacks', 'gifts', 'demonstrators', 'books', 'valentines', 'touchdowns', 'puppies', 'actors', 'actresses', 'cars', 'celebrities', 'little kids', 'disney princesses', 'villains', 'classic movies', 'TV shows'])
 
 def believe():
     return 
@@ -30,7 +30,7 @@ def quiz():
     return "QUIZ! Which one of these " + str(num) + " " + word() + " describes " + random.choice(['you', 'your friends', 'your social life', 'your family', 'your parents', 'your music taste']) + '?'
 
 def mostAbout():
-    return 'The ' +str(num) +random.choice([random.choice([' best',' worst']), random.choice([' most annoying', ' most horrible', ' most awesome', ' most insane', ' funniest', ' wrongest', ' rightest'])]) + ' things about ' +word()
+    return 'The ' +str(num) +random.choice([random.choice([' best',' worst']), random.choice([' most annoying', ' most horrible', ' most awesome', ' most insane', ' funniest', ' wrongest', ' rightest', ' best'])]) + ' things about ' +word()
 
 d = {1:reasons, 2:humanity, 3:tears, 4:quiz, 5:mostAbout}
 
